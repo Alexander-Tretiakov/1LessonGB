@@ -1,0 +1,41 @@
+public class GBHWJAVA1 {
+    public static void  main(String[] args)  {
+        PrintThreeWords();
+        checkSumSign();
+        checkColor();
+    }
+    public static void PrintThreeWords(){
+        System.out.println("Orange");
+        System.out.println("Banana");
+        System.out.println("Apple");
+    }
+
+
+
+    public static void checkSumSign() {
+        int A = 10;
+        int B = -5;
+
+        if (A + B > 0) {
+            System.out.println("Сумма положительная");
+        } else if (A +B < 0) {
+            System.out.println("Сумма отрицательная");
+        } else {
+            System.out.println("Сумма положительная?");
+        }
+    }
+    public static void checkColor() {
+        int Value = 101;
+
+
+        if (Value <= 0) {
+            System.out.println("Красный");
+        } else if (Value <= 100) {
+            System.out.println("Желтый");
+        }else if (Value > 100) {
+            System.out.println("Зелёный");
+        }
+    }
+}
+
+
