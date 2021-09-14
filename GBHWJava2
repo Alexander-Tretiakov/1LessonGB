@@ -1,0 +1,36 @@
+public class GBHWjava2 {
+    public static void main(String[] args) {
+        int a = 0 , b = 9 , c = 10, x = -1 ,times = 5;
+        String word = "wow";
+        System.out.println(sumwithin10and20(a, b));
+        NegativePositive(c);
+        System.out.println(isNegative(x));
+        printWordNTimes(word,times);
+    }
+
+
+    public static boolean sumwithin10and20(int a, int b) {
+        return (a + b) > 10 && (a + b) <= 20;
+    }
+
+    public static void NegativePositive(int c) {
+
+        if (c > 0) {
+            System.out.println("Positive");
+        } else {
+            System.out.println("Negative!");
+        }
+    }
+    public static boolean isNegative(int x) {
+
+        return (x>=0);
+    }
+   public static void printWordNTimes(String word, int times) {
+       int i;
+       for (i=0; i< times ; i++) {
+            System.out.println(word);
+        }
+    }
+
+
+}
